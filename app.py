@@ -10,7 +10,7 @@ app = Flask(__name__)
 model = joblib.load(open('xgb_model.joblib', 'rb'))
 
 # Load the scaler used to preprocess data
-scalar = joblib.load(open('xgb_model_scaler', 'rb'))
+scalar = joblib.load(open('scaling.joblib', 'rb'))
 
 # Define the route for the home page
 @app.route('/')
